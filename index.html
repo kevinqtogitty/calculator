@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="/Users/kevinto/repos/calculator/style.css">
+    <script src="/Users/kevinto/repos/calculator/main.js" defer></script>
+</head>
+<body>
+        <div class="flex">    
+            <div class="display" id="displayCurrent">
+                Hello
+            </div>
+            <div class="grid-container">
+                <button class="num" onclick="display(9), storeNum(9)">9</button>
+                <button class="num" onclick="display(8), storeNum(8)">8</button>
+                <button class="num" onclick="display(7), storeNum(7)">7</button>
+                <button id="add" onclick="display('+'), push('+')">+</button>
+                <button class="num" onclick="display(6), storeNum(6)">6</button>
+                <button class="num" onclick="display(5), storeNum(5)">5</button>
+                <button class="num" onclick="display(4), storeNum(4)">4</button>
+                <button id="subtract" onclick="display('-'), push('-')">-</button>
+                <button class="num" onclick="display(3), storeNum(3)">3</button>
+                <button class="num" onclick="display(2), storeNum(2)">2</button>
+                <button class="num" onclick="display(1), storeNum(1)">1</button>
+                <button id="multiply" onclick="display('*'), push('*')">x</button>
+                <button class="dot" onclick="clearDisplay()">C</button>
+                <button class="num" onclick="display(0), storeNum(0)">0</button>
+                <button id="equals" onclick="display('='), push('=')">=</button>
+                <Button id="divide" onclick="display('/'), push('/')">/</Button>
+                <button onclick="display('.'), storeNum('.')">.</button>
+            </div>
+        </div>
+</body>
+</html>
